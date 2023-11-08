@@ -1,0 +1,60 @@
+﻿:root {
+	/* blue */
+	--primaryColor: #4831d4;
+	--primaryText: #fff;
+	--secondaryColor: #ccf381;
+
+	--backGroundColor: #F9F9F9;
+	--lightText: #9f95e4;
+}
+
+body {
+	background-color: var(--backGroundColor);
+	font-size: 19px;
+	font-family: Helvetica, sans-serif;
+	margin: 0px;
+}
+
+section {
+	padding: 50px 80px ;
+}
+
+h1 {
+	font-size: 55px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 17px;
+	font-weight: 800;
+	color: var(--lightText);
+}
+
+.primary-background {
+	background-color: var(--primaryColor);
+	color: #fff;
+}
+
+.primary {
+	color: var(--primaryColor);
+}
+
+.secondary {
+	color: var(--secondaryColor);
+}
+
+.card {
+	max-width: 500px;
+	margin-bottom: 100px;
+}
+
+/* layout styles */
+.row {
+	display: flex;
+}
+
+.row.right {
+	flex-direction: row-reverse;
+	margin-right: 100px;
+}
