@@ -5,7 +5,7 @@
 	--secondaryColor: #ccf381;
 
 	--backGroundColor: #F9F9F9;
-	--lightText: #9f95e4;
+	--primaryLight: #9f95e4;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 section {
-	padding: 50px 80px ;
+	padding: 50px 80px;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
 h3 {
 	font-size: 17px;
 	font-weight: 800;
-	color: var(--lightText);
+	color: var(--primaryLight);
 }
 
 .primary-background {
@@ -57,4 +57,60 @@ h3 {
 .row.right {
 	flex-direction: row-reverse;
 	margin-right: 100px;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+/* social links */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px;
+	color: white;
+}
+
+.fa:hover {
+	background: var(--secondaryColor);
+	color: var(--primaryColor);
+
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+	/* align right */
+	align-items: end; 
+}
+
+.links > a {
+	max-width: 20px;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+div.toaster {
+	color: var(--primaryColor);
+	background-color: var(--secondaryColor);
+	animation: fadeOut 1s cubic-bezier(.9,0,.9,.5) forwards;
+	font-weight: 900;
+	font-size: medium;
+	padding: 18px;
+	margin: 5px;
+	border: #fff 2px;
+}
+
+a.fadeIn {
+	animation: fadeOut 1s ease-in reverse;
 }
