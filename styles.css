@@ -6,6 +6,7 @@
 
 	--backGroundColor: #F9F9F9;
 	--primaryLight: #9f95e4;
+	--primaryDark: #37289b;
 }
 
 body {
@@ -31,17 +32,27 @@ h3 {
 	color: var(--primaryLight);
 }
 
+.primary {
+	color: var(--primaryColor);
+}
+
 .primary-background {
 	background-color: var(--primaryColor);
 	color: #fff;
 }
 
-.primary {
-	color: var(--primaryColor);
+.primary-dark-background {
+	background-color: var(--primaryDark);
+	color: #fff;
 }
 
 .secondary {
 	color: var(--secondaryColor);
+}
+
+.secondary-links {
+	color: var(--secondaryColor);
+	text-decoration: none;
 }
 
 .card {
@@ -76,7 +87,6 @@ h3 {
 .fa:hover {
 	background: var(--secondaryColor);
 	color: var(--primaryColor);
-
 }
 
 .links {
@@ -113,4 +123,15 @@ div.toaster {
 
 a.fadeIn {
 	animation: fadeOut 1s ease-in reverse;
+}
+
+/* tinekr logos */
+.tinker-logos {
+	padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 166vh;
 }
