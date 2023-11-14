@@ -7,6 +7,7 @@
 	--backGroundColor: #F9F9F9;
 	--primaryLight: #9f95e4;
 	--primaryDark: #37289b;
+	--primaryDarker: #281e68;
 }
 
 body {
@@ -22,6 +23,12 @@ section {
 
 h1 {
 	font-size: 55px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 28px;
 	font-weight: 800;
 	margin-bottom: 10px;
 }
@@ -44,6 +51,15 @@ h3 {
 .primary-dark-background {
 	background-color: var(--primaryDark);
 	color: #fff;
+}
+
+.primary-darker-background {
+	background-color: var(--primaryDarker);
+	color: var(--primaryLight);
+}
+
+.primary-darker-background > * > a{
+	color: var(--primaryLight);
 }
 
 .secondary {
@@ -74,7 +90,7 @@ h3 {
 	flex-grow: 1;
 }
 
-/* social links */
+/* social links - upper */
 .fa {
 	padding: 20px;
 	font-size: 30px;
@@ -125,7 +141,7 @@ a.fadeIn {
 	animation: fadeOut 1s ease-in reverse;
 }
 
-/* tinekr logos */
+/* tinker logos */
 .tinker-logos {
 	padding: 30px;
     display: flex;
